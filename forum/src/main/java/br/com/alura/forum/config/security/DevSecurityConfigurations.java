@@ -32,7 +32,7 @@ public class DevSecurityConfigurations extends WebSecurityConfigurerAdapter {
 	
 	@Override
 	@Bean
-	@Profile("dev")
+	@Profile(value = {"dev", "test"})
 	protected AuthenticationManager authenticationManager() throws Exception {
 		return super.authenticationManager();
 	}
