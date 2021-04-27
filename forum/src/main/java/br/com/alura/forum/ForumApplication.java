@@ -15,7 +15,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @EnableSpringDataWebSupport
 @EnableCaching
 @EnableSwagger2
-public class ForumApplication extends SpringBootServletInitializer {
+public class ForumApplication  {
 
 	public static void main(String[] args) {
 		SpringApplication.run(ForumApplication.class, args);
@@ -23,9 +23,9 @@ public class ForumApplication extends SpringBootServletInitializer {
 	
 	//habilitar a geração de war
 	
-	@Override
-	protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
-		return builder.sources(ForumApplication.class);
-	}
+//	@Override
+//	protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
+//		return builder.sources(ForumApplication.class);
+//	}
 
 }
